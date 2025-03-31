@@ -12,6 +12,8 @@
     --greyish-turquoise: #5E7A7D;
     --squeeze: #F3F9FA;
     --sherpa-blue: #00474B;
+    --topaz: #26C2AE;
+    --beeetle-green: #567878;
 }
 body{
     font-size: 1.6rem;
@@ -35,6 +37,9 @@ main{
     strong{
         color: var(--greyish-turquoise);
     }
+    div{
+        margin-bottom: 3.2rem
+    }
 
     .input-box{
         margin-top: .6rem;
@@ -42,6 +47,11 @@ main{
         display: flex;
         align-items: center;
         padding:.6rem 1.8rem;
+        border-radius: 5px;
+        &:has(input:focus){
+            outline: 2px solid var(--topaz);
+
+        }
     }
     input{
         border: none;
@@ -60,6 +70,41 @@ main{
 
     }
     input::placeholder{
+
+    }
+    .tip{
+        margin-top: 1.6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.6rem;
+
+        botton{
+            font-size: 2.4rem;
+           font-weight: 700;
+           color: var(--white);
+           border: none;
+           background: var(--sherpa-blue);
+           padding-block: .6rem;
+           border-radius: 5px;
+        }
         
+        input{
+            width: 100%;
+            background: var(--squeeze);
+            color: var(--sherpa-blue);
+            text-align: center;
+            padding-block: .6rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 2.4rem;
+            font-weight: 700;
+            
+            &::placeholder{
+                color: var(--beeetle-green);
+            }
+            &:focus{
+                outline: 2px solid var(--topaz);
+            }
+        }
     }
 }
