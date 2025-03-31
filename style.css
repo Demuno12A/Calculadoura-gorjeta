@@ -69,9 +69,7 @@ main{
         }
 
     }
-    input::placeholder{
-
-    }
+  
     .tip{
         margin-top: 1.6rem;
         display: grid;
