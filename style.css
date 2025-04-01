@@ -155,7 +155,7 @@ input::-webkit-outer-spin-button{
     display: none;
 }
 
-@media(min-widh: 920px);{
+@media(min-width: 920){
     main{
         max-width: 92rem;
         display: flex;
