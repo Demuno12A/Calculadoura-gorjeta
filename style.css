@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -96,11 +97,11 @@ main {
 
         button {
             font-size: 2.4rem;
-            color: var(--white);
-            background: var(--sherpa-blue);
-            border: none;
-            padding-block: .6rem;
             font-weight: 700;
+            color: var(--white);
+            border: none;
+            background: var(--sherpa-blue);
+            padding-block: .6rem;
             border-radius: .5rem;
 
         }
@@ -187,8 +188,6 @@ input::-webkit-outer-spin-button {
 }
 
 @media (min-width: 920px){
-
-
     main{
         display: flex;
         max-width: 92rem;
@@ -240,3 +239,4 @@ input::-webkit-outer-spin-button {
           }
     }
 }
+

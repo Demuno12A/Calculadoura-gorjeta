@@ -19,20 +19,18 @@
 
                 <div class="input-box">
                   <img src="./images/icon-dollar.svg" alt="icon-dollar">
-                  <input type="number" id="bill" placeholder="0">
-                </div>
+                 <input oninput="receiveBillValue()" type="number" id="bill" placeholder="0">
             </div>
 
             <div class="tip">
                 <strong>Select Tip %</strong>
                 <div>
-                    <button 
-                    onclick="receiveTipPercentage(5)"  id="button-5">5%</button>
-                    <button   onclick="receiveTipPercentage(10)"  id="button-10">10%</button>
-                    <button  onclick="receiveTipPercentage(15)"  id="button-15">15%</button>
-                    <button  onclick="receiveTipPercentage(25)"  id="button-25">25%</button>
-                    <button onclick="receiveTipPercentage(50)"  id="button-50">50%</button>
-                    <input oninput="receiveCustomTipPercentage()"  type="number" id="custom-tip" placeholder="Custom">
+                    <button  id="button-5"   onclick="receiveTipPercentageValue(5)" >5%</button>
+                    <button  id="button-10"  onclick="receiveTipPercentageValue(10)" >10%</button>
+                    <button  id="button-15"  onclick="receiveTipPercentageValue(15)" >15%</button>
+                    <button  id="button-25"  onclick="receiveTipPercentageValue(25)" >25%</button>
+                    <button  id="button-50"  onclick="receiveTipPercentageValue(50)" >50%</button>
+                    <input oninput="receiveCustomTipPercetagemValue()" type="number" id="custom-tip" placeholder="Custom">
                 </div>
             </div>
             
@@ -41,7 +39,7 @@
 
                 <div class="input-box">
                  <img src="./images/icon-person.svg" alt="icon-person">
-                  <input type="number" id="people" placeholder="0">
+                  <input oninput="receiveNumberOfPeopleValue()" type="number" id="people" placeholder="0" >
                 </div>
             </div>
         </section>
@@ -62,7 +60,7 @@
                  <span>/ person</span>
                
                 </p>
-                <strong> 0.00</strong>
+                <strong> $0.00</strong>
             </div>
            </div>
 
